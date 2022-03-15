@@ -29,18 +29,18 @@
                 <h3 class="catagoryName">Most Popular</h3>
                 <aside class="seperator catagoreySpacing">
                     
-                    <div class="mostPopular1">
+                    <div id='book1' onclick="changePage('product', 1)">
                         <img src="https://3.bp.blogspot.com/-4LO_lEcf_8M/WbZ6TC0_MaI/AAAAAAAACoI/Cp9H3_AXcuowiGEH3RM6-M5LTi0yBdUAwCEwYBhgL/s1600/Image1.jpg" width="215px">
                         <h4>Guilty Innocence</h4>
                         <p>$25.99</p>
                         
                     </div>
-                    <div>
+                    <div id="book2" onclick="changePage('product', 2)">
                         <img src="https://www.creativindie.com/wp-content/uploads/2012/07/stock-image-site-pinterest-graphic.jpg" width="200px">
                         <h4>The Best Stock Images</h4>
                         <p>$19.99</p>
                     </div>
-                    <div>
+                    <div id="book3" onclick="changePage('product', 3)">
                         <img src="https://smsa.org.au/assets/the-business-iain-banks.jpg" width="198px">
                         <h4>The Business</h4>
                         <p>$20.99</p>
@@ -48,21 +48,21 @@
                 </aside>
             </div>
     
-            <div>
+            <div">
                 <h3 class="catagoryName">On Sale</h3>
                 <aside class="seperator catagoreySpacing">
-                    <div>
+                    <div id="book4" onclick="changePage('product', 4)">
                         <img src="https://smsa.org.au/assets/the-business-iain-banks.jpg" width="198px">
                         <h4>The Business</h4>
                         <p>$10.99</p>
                         
                     </div>
-                    <div>
+                    <div id="book5" onclick="changePage('product', 5)">
                         <img src="https://3.bp.blogspot.com/-4LO_lEcf_8M/WbZ6TC0_MaI/AAAAAAAACoI/Cp9H3_AXcuowiGEH3RM6-M5LTi0yBdUAwCEwYBhgL/s1600/Image1.jpg" width="215px">
                         <h4>Guilty Innocence</h4>
                         <p>$20.99</p>
                     </div>
-                    <div>
+                    <div id="book6" onclick="changePage('product', 6)">
                         <img src="https://www.creativindie.com/wp-content/uploads/2012/07/stock-image-site-pinterest-graphic.jpg" width="200px">
                         <h4>The Best Stock Images</h4>
                         <p>$10.99</p>
@@ -74,23 +74,36 @@
                 <h3 class="catagoryName">New Releases</h3>
                 <aside class="seperator catagoreySpacing">
                     
-                    <div>
+                    <div id="book7" onclick="changePage('product', 7)">
                         <img src="https://www.creativindie.com/wp-content/uploads/2012/07/stock-image-site-pinterest-graphic.jpg" width="200px">
                         <h4>The Best Stock Images</h4>
                         <p>$25.99</p>
                     </div>
-                    <div>
+                    <div id="book8" onclick="changePage('product', 8)"> 
                         <img src="https://3.bp.blogspot.com/-4LO_lEcf_8M/WbZ6TC0_MaI/AAAAAAAACoI/Cp9H3_AXcuowiGEH3RM6-M5LTi0yBdUAwCEwYBhgL/s1600/Image1.jpg" width="215px">
                         <h4>Guilty Innocence</h4>
                         <p>$30.99</p>
                     </div>
-                    <div>
+                    <div id="book9"onclick="changePage('product', 9)">
                         <img src="https://smsa.org.au/assets/the-business-iain-banks.jpg" width="198px">
                         <h4>The Business</h4>
                         <p>$25.99</p>
                     </aside>
             </div>
         </main>
+
+        <section id="bookInfo" class="bookInfo">
+            <div class="bookDetails">
+                <h2 id="title">Book Title</h2>
+                <img id='image' src="https://3.bp.blogspot.com/-4LO_lEcf_8M/WbZ6TC0_MaI/AAAAAAAACoI/Cp9H3_AXcuowiGEH3RM6-M5LTi0yBdUAwCEwYBhgL/s1600/Image1.jpg">
+                <p id="price">$20.99</p>
+            </div>
+            <div class="bookDescription">
+                <h3>Description</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, eaque. Eius animi magni nulla, sunt amet totam harum error, asperiores facere ad molestiae doloremque ab impedit dolorum. Aperiam, quibusdam voluptate.</p>
+            </div>
+            <button class="confirmButton">Add To Cart</button>
+        </section>
 
         <section class="profilePage">
             <h2 class="profileTitle">Profile</h2>
