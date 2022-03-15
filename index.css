@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+}
+
+main {
+  display: block;
+}
+
+footer {
+  display: none;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  margin: 0 auto;
+  width: 100%;
+  height: 5%;
+  background-color: blueviolet;
+}
+
+img {
+  cursor: pointer;
+}
+
+input {
+  font-size: 26px;
+}
+
+footer {
+  background-color: blueviolet;
+  text-align: center;
+}
+
+/* Main page CSS */
+
+.storeHome {
+  display: block;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.searchBar {
+  display: block;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+.icons {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  float: right;
+}
+.profileIcon {
+  float: right;
+  display: inline-block;
+  margin-left: 95%;
+  cursor: pointer;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.profileWidth {
+  width: 110%;
+}
+
+.shoppingCartIcon {
+  display: inline-block;
+  float: right;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.shoppingWidth {
+  width: 75%;
+}
+
+.seperator {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  border: solid black 2px;
+  margin-top: 0;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+}
+
+.catagoreySpacing {
+  margin-top: 0;
+  margin-bottom: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.catagoryName {
+  display: inline-block;
+  margin-left: 10%;
+}
+
+/* Profile page css */
+
+.profilePage {
+  display: none;
+  font-size: 26px;
+}
+
+.profileTitle {
+  margin-top: 1%;
+  text-align: center;
+}
+
+.profileImg {
+  cursor: auto;
+  display: block;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.userInfo {
+  display: block;
+  text-align: center;
+  margin-top: 1%;
+  margin-top: 2%;
+}
+
+.saveProfile {
+  display: block;
+  margin: auto;
+  margin-top: 2%;
+}
+
+.spacing {
+  margin-top: 2%;
+}
+
+/* Shopping cart css */
+
+.shoppingCart {
+  display: none;
+  border: solid black 2px;
+}
+
+.inCart {
+  border: solid black 2px;
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 3%;
+}
+
+.confirmOrder {
+  text-align: center;
+}
+
+.confirmButton {
+  font-size: 19px;
+}

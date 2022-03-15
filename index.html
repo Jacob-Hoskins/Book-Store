@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>store</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <nav>
+            <div id="homePageButton" class="storeHome" onclick="changePage('home')">
+                <h1>Books</h1>
+            </div>
+            <div class="searchBar">
+                <input  placeholder="Search">
+            </div>
+            <div class="icons">
+                <div class="profileWidth">
+                    <img id="profilePageButton" class="profileIcon" onclick="changePage('profile')" src="https://www.seekpng.com/png/detail/202-2024994_profile-icon-profile-logo-no-background.png" width="60px">
+
+                </div>
+                <div class="shoppingWidth">
+                    <img id="shoppingCartPageButton" class="shoppingCartIcon" onclick="changePage('cart')" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK_PkI64xdWfK_ITkHMH-5yoXoCcQye0OrHA&usqp=CAU" width="50px">
+
+                </div>
+            </div>
+            
+        </nav>
+        <main>
+            <div>
+                <h3 class="catagoryName">Most Popular</h3>
+                <aside class="seperator catagoreySpacing">
+                    
+                    <div class="mostPopular1">
+                        <img src="https://3.bp.blogspot.com/-4LO_lEcf_8M/WbZ6TC0_MaI/AAAAAAAACoI/Cp9H3_AXcuowiGEH3RM6-M5LTi0yBdUAwCEwYBhgL/s1600/Image1.jpg" width="215px">
+                        <h4>Guilty Innocence</h4>
+                        <p>$25.99</p>
+                        
+                    </div>
+                    <div>
+                        <img src="https://www.creativindie.com/wp-content/uploads/2012/07/stock-image-site-pinterest-graphic.jpg" width="200px">
+                        <h4>The Best Stock Images</h4>
+                        <p>$19.99</p>
+                    </div>
+                    <div>
+                        <img src="https://smsa.org.au/assets/the-business-iain-banks.jpg" width="198px">
+                        <h4>The Business</h4>
+                        <p>$20.99</p>
+                    </div>
+                </aside>
+            </div>
+    
+            <div>
+                <h3 class="catagoryName">On Sale</h3>
+                <aside class="seperator catagoreySpacing">
+                    <div>
+                        <img src="https://smsa.org.au/assets/the-business-iain-banks.jpg" width="198px">
+                        <h4>The Business</h4>
+                        <p>$10.99</p>
+                        
+                    </div>
+                    <div>
+                        <img src="https://3.bp.blogspot.com/-4LO_lEcf_8M/WbZ6TC0_MaI/AAAAAAAACoI/Cp9H3_AXcuowiGEH3RM6-M5LTi0yBdUAwCEwYBhgL/s1600/Image1.jpg" width="215px">
+                        <h4>Guilty Innocence</h4>
+                        <p>$20.99</p>
+                    </div>
+                    <div>
+                        <img src="https://www.creativindie.com/wp-content/uploads/2012/07/stock-image-site-pinterest-graphic.jpg" width="200px">
+                        <h4>The Best Stock Images</h4>
+                        <p>$10.99</p>
+                    </div>
+                </aside>
+            </div>
+
+            <div>
+                <h3 class="catagoryName">New Releases</h3>
+                <aside class="seperator catagoreySpacing">
+                    
+                    <div>
+                        <img src="https://www.creativindie.com/wp-content/uploads/2012/07/stock-image-site-pinterest-graphic.jpg" width="200px">
+                        <h4>The Best Stock Images</h4>
+                        <p>$25.99</p>
+                    </div>
+                    <div>
+                        <img src="https://3.bp.blogspot.com/-4LO_lEcf_8M/WbZ6TC0_MaI/AAAAAAAACoI/Cp9H3_AXcuowiGEH3RM6-M5LTi0yBdUAwCEwYBhgL/s1600/Image1.jpg" width="215px">
+                        <h4>Guilty Innocence</h4>
+                        <p>$30.99</p>
+                    </div>
+                    <div>
+                        <img src="https://smsa.org.au/assets/the-business-iain-banks.jpg" width="198px">
+                        <h4>The Business</h4>
+                        <p>$25.99</p>
+                    </aside>
+            </div>
+        </main>
+
+        <section class="profilePage">
+            <h2 class="profileTitle">Profile</h2>
+            <img class="profileImg" src="https://www.seekpng.com/png/detail/202-2024994_profile-icon-profile-logo-no-background.png" width="60px">
+            <aside class="userInfo">
+                <p class="spacing">First Name</p>
+                <input type="text" placeholder="John">
+
+                <p class="spacing"> Last Name</p>
+                <input type="text" placeholder="Smith">
+
+                <p class="spacing">Address</p>
+                <input placeholder="111 fakeStreet dr">
+
+                <p class="spacing">Zip Code</p>
+                <input placeholder="11223">
+
+                <p class="spacing">City</p>
+                <input placeholder="Harrisburg">
+
+                <p class="spacing">State</p>
+                <input placeholder="Pennsylvania">
+
+                <button class="saveProfile">Save</button>
+            </aside>
+        </section>
+
+        <section class="shoppingCart">
+            <h2>Shopping Cart</h2>
+            <aside class="inCart">
+                <h3>items</h3>
+                <div class="spacing">
+                    <p>Book 1</p>
+                    <p>$19.99</p>
+                </div>
+                <div class="spacing">
+                    <p>Book 2</p>
+                    <p>$25.99</p>
+                </div>
+
+                <div class="spacing">
+                    <h3>Total:</h3>
+                    <p>$46.98</p>
+                </div>
+            </aside>
+            <div class="confirmOrder">
+                <button class="confirmButton">Buy</button>
+            </div>
+        </section>
+
+        <footer>
+            <p>Most Popular</p>
+            <p>On Sale</p>
+            <p>New Releases</p>
+        </footer>
+
+        <script src="index.js"> </script>
+    </body>
+</html>
