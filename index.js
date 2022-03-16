@@ -196,3 +196,21 @@ function updateTotal(value){
     let updatedPrice = document.getElementById('finalTotal')
     updatedPrice.innerText = '$' + value
 }
+
+//save user info to local storage
+function saveUserInfo(){
+    const first = document.getElementById('firstName')
+    const last = document.getElementById('lastName')
+    const address = document.getElementById('address')
+    const zipCode = document.getElementById('zipCode')
+    const city = document.getElementById('city')
+    const state = document.getElementById('state')
+
+    localStorage.setItem('first Name', first.value)
+    localStorage.setItem("last Name", last.value)
+    localStorage.setItem("address", address.value)
+    localStorage.setItem("zip code", zipCode.value)
+    localStorage.setItem('city', city.value)
+    localStorage.setItem('state', state.value)
+
+}
