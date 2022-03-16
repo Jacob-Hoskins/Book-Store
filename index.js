@@ -64,7 +64,7 @@ function updateBookPage(value){
         let sourceImg = pageImg.getAttribute('src')
     
         bookTitle.innerText = pageTitle.textContent
-        bookPrice.innerText = pagePrice.textContent
+        bookPrice.innerText = '$' + pagePrice.textContent
         bookImg.src = sourceImg
         
     }else if(value === 2){
@@ -74,7 +74,7 @@ function updateBookPage(value){
         let sourceImg = pageImg.getAttribute('src')
 
         bookTitle.innerText = pageTitle.textContent
-        bookPrice.innerText = pagePrice.textContent
+        bookPrice.innerText = '$' + pagePrice.textContent
         bookImg.src = sourceImg
     }
     else if(value === 3){
@@ -84,7 +84,7 @@ function updateBookPage(value){
         let sourceImg = pageImg.getAttribute('src')
 
         bookTitle.innerText = pageTitle.textContent
-        bookPrice.innerText = pagePrice.textContent
+        bookPrice.innerText = '$' + pagePrice.textContent
         bookImg.src = sourceImg
 
     }else if(value === 4){
@@ -94,7 +94,7 @@ function updateBookPage(value){
         let sourceImg = pageImg.getAttribute('src')
 
         bookTitle.innerText = pageTitle.textContent
-        bookPrice.innerText = pagePrice.textContent
+        bookPrice.innerText = '$' + pagePrice.textContent
         bookImg.src = sourceImg
 
     }else if(value === 5){
@@ -104,7 +104,7 @@ function updateBookPage(value){
         let sourceImg = pageImg.getAttribute('src')
 
         bookTitle.innerText = pageTitle.textContent
-        bookPrice.innerText = pagePrice.textContent
+        bookPrice.innerText = '$' + pagePrice.textContent
         bookImg.src = sourceImg
 
     }else if(value === 6){
@@ -114,7 +114,7 @@ function updateBookPage(value){
         let sourceImg = pageImg.getAttribute('src')
 
         bookTitle.innerText = pageTitle.textContent
-        bookPrice.innerText = pagePrice.textContent
+        bookPrice.innerText = '$' + pagePrice.textContent
         bookImg.src = sourceImg
 
     }else if(value === 7){
@@ -124,7 +124,7 @@ function updateBookPage(value){
         let sourceImg = pageImg.getAttribute('src')
 
         bookTitle.innerText = pageTitle.textContent
-        bookPrice.innerText = pagePrice.textContent
+        bookPrice.innerText = '$' + pagePrice.textContent
         bookImg.src = sourceImg
 
     }else if(value === 8){
@@ -134,7 +134,7 @@ function updateBookPage(value){
         let sourceImg = pageImg.getAttribute('src')
 
         bookTitle.innerText = pageTitle.textContent
-        bookPrice.innerText = pagePrice.textContent
+        bookPrice.innerText = '$' + pagePrice.textContent
         bookImg.src = sourceImg
 
     }else if(value === 9){
@@ -144,11 +144,55 @@ function updateBookPage(value){
         let sourceImg = pageImg.getAttribute('src')
 
         bookTitle.innerText = pageTitle.textContent
-        bookPrice.innerText = pagePrice.textContent
+        bookPrice.innerText = '$' + pagePrice.textContent
         bookImg.src = sourceImg
 
     }
 
 }
 
-function addToCart(value){}
+function addToCart(){
+    const cart = document.getElementById('inCart')
+    const newDiv = document.createElement('div')
+    let newTitle = document.createElement('h5')
+    let newPrice = document.createElement('p')
+    let title = document.getElementById('title')
+    let price = document.getElementById('price')
+
+    cart.appendChild(newDiv)
+    
+    newDiv.appendChild(newTitle)
+    newDiv.appendChild(newPrice)
+
+    newPrice.setAttribute('id', 'cartPrice')
+
+    newTitle.innerText = title.textContent
+    newPrice.innerText = '$' + price.textContent
+
+    cartTotal(price.textContent)
+
+
+}
+
+//array for cart total function that adds item price to array when add to cart button is pushed
+let priceArray = []
+
+//adds items to the array and returns the sum of the array
+function cartTotal(value){
+    priceArray.push(value)
+    let sum = 0
+
+    console.log(priceArray)
+    for(let i = 0; i < priceArray.length; i++){
+        sum += parseFloat(priceArray[i])
+    }
+    console.log(sum)
+
+    updateTotal(sum)
+    
+}
+
+function updateTotal(value){
+    let updatedPrice = document.getElementById('finalTotal')
+    updatedPrice.innerText = '$' + value
+}

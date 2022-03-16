@@ -173,3 +173,8 @@ footer {
 .confirmButton {
   font-size: 19px;
 }
+
+.cartTotal {
+  text-align: center;
+  font-size: 26px;
+}
